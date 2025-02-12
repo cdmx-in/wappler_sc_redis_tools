@@ -303,6 +303,24 @@
             "defaultValue": "",
             "serverDataBindings": true,
             "help": "Entry to be considered as note."
+          },
+          {
+            "name": "p_key",
+            "optionName": "p_key",
+            "title": "Property Key",
+            "type": "text",
+            "defaultValue": "",
+            "serverDataBindings": true,
+            "help": "Entry a property key."
+          },
+          {
+            "name": "p_value",
+            "optionName": "p_value",
+            "title": "Property Value",
+            "type": "text",
+            "defaultValue": "",
+            "serverDataBindings": true,
+            "help": "Entry a property value."
           }
         ]
       }
