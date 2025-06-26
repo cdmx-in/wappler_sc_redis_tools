@@ -183,9 +183,10 @@
           }
         ]
       },
-      { "group": "Log Data",
+      {
+        "group": "Log Data",
         "variables": [
-        {
+          {
             "name": "timestamp",
             "optionName": "timestamp",
             "title": "Timestamp",
@@ -323,11 +324,11 @@
             "help": "Entry a property value."
           }
         ]
-      }
+      },
       {
-        group: 'Output',
-        variables: [
-          { name: 'output', optionName: 'output', title: 'Output', initValue: true, defaultValue: false, type: 'boolean'}
+        "group": "Output",
+        "variables": [
+          { "name": "output", "optionName": "output", "title": "Output", "initValue": true, "defaultValue": false, "type": "boolean" }
         ]
       }
     ]
