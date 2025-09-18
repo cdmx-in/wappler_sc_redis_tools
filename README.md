@@ -8,6 +8,7 @@ This SC Module provides a set of Redis-related tools for various operations, inc
 
 - [Redis Insert Data](#redis-insert-data)
 - [Redis Fetch Data](#redis-fetch-data)
+- [Redis Delete Data](#redis-delete-data)
 - [Check Redis](#check-redis)
 - [Redis Insert Log](#redis-insert-log)
 - [Error Handling](#error-handling)
@@ -42,6 +43,21 @@ Fetch data from a Redis database by key.
 ### Output
 
 - **Output**: The retrieved data from Redis. If the data is JSON, it will be parsed and returned as an object; otherwise, the raw string is returned.
+
+## Redis Delete Data <img src="https://github.com/seanyeh/fontawesome-svgs/raw/master/svg/trash-solid.svg" width="30" height="30" alt="Redis Delete Data Icon">
+
+### Description
+
+Delete data from a Redis database by key.
+
+### Input Parameters
+
+- **Name**: A unique name for this operation.
+- **Key**: The key to delete from Redis.
+
+### Output
+
+- **Output**: `{ success: true, deleted: <number> }` where `deleted` indicates the number of keys that were deleted (0 if key didn't exist, 1 if key was deleted), or an error if the operation failed.
 
 ## Check Redis <img src="https://github.com/seanyeh/fontawesome-svgs/raw/master/svg/heartbeat-solid.svg" width="30" height="30" alt="Check Redis Icon">
 

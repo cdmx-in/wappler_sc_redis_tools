@@ -117,3 +117,20 @@ exports.redis_log_insert = async function (options) {
     throw error;
   }
 };
+
+exports.redis_delete = async function (options) {
+  try {
+    if (!redis) {
+      throw new Error('Redis client is not available.');
+    }
+    const key = this.parse(options.key);
+    if (!key) {
+      throw new Error('Invalid key provided.');
+    }
+    const result = await redis.del(key);
+    return { success: true, deleted: result };
+  } catch (error) {
+    console.error('Redis delete error:', error);
+    throw error;
+  }
+};
