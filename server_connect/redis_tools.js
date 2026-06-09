@@ -76,6 +76,18 @@ exports.redis_insert = async function (options) {
   });
 }
 
+exports.redis_delete = async function (options) {
+  if (!redis) {
+    throw new Error('Redis client is not available.');
+  }
+  const key = this.parse(options.key);
+  if (!key) {
+    throw new Error('Invalid key provided.');
+  }
+  const deleted = await redis.del(key);
+  return { success: true, deleted };
+};
+
 /**
  * Masks sensitive data by keeping only last N characters
  * @param {string} input The input string to mask
