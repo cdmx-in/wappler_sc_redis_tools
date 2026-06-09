@@ -215,6 +215,8 @@ exports.redis_log_insert = async function (options) {
     e_id: toStringOrEmpty(this.parse(options.id)),
     e_type: toStringOrEmpty(this.parse(options.e_type)),
     uid: Number(this.parse(options.user_id)),
+    error_code: toStringOrEmpty(this.parse(options.error_code)),
+    git_version: process.env.LOG_GIT_VERSION || '',
     msg: toStringOrEmpty(this.parse(options.message)),
     domain: toStringOrEmpty(this.parse(options.domain)),
     sys: toStringOrEmpty(this.parse(options.system)),

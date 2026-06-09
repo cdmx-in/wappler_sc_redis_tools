@@ -94,9 +94,9 @@ Insert structured log data into a Redis list for later analysis or auditing.
 - **Domain**: Domain name.
 - **System**: System type.
 - **Session ID**: Session identifier.
-- **Transaction ID**: (Optional) Transaction identifier.
+- **Entry Type**: (Optional) Entry type for log classification.
+- **Error Code**: (Optional) Error code associated with the log entry.
 - **Message Context**: (Optional) Additional details as a JSON object or string.
-- **Is Note?**: (Optional) Mark entry as a note.
 - **Property Key**: (Optional) Additional property key.
 - **Property Value**: (Optional) Additional property value.
 
