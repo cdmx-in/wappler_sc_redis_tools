@@ -278,13 +278,13 @@
             "help": "Session ID"
           },
           {
-            "name": "transaction_id",
-            "optionName": "transaction_id",
-            "title": "Transaction ID",
+            "name": "entry_type",
+            "optionName": "entry_type",
+            "title": "Entry Type",
             "type": "text",
             "required": false,
             "serverDataBindings": true,
-            "help": "Transaction ID (optional)"
+            "help": "Entry Type"
           },
           {
             "name": "context",
@@ -295,15 +295,6 @@
             "defaultValue": "",
             "serverDataBindings": true,
             "help": "Additional details as a JSON object"
-          },
-          {
-            "name": "is_note",
-            "optionName": "is_note",
-            "title": "Is Note?",
-            "type": "text",
-            "defaultValue": "",
-            "serverDataBindings": true,
-            "help": "Entry to be considered as note."
           },
           {
             "name": "p_key",
