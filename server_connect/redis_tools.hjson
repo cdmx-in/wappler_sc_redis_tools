@@ -232,8 +232,8 @@
             "help": "Event Description"
           },
           {
-            "name": "type",
-            "optionName": "type",
+            "name": "e_type",
+            "optionName": "e_type",
             "title": "Type",
             "type": "text",
             "required": true,
